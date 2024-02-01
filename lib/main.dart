@@ -33,6 +33,7 @@ class MyApp extends StatelessWidget {
             '/wallpaper_screen': (_) => const WallpaperScreen(),
             '/weather_information_screen': (_) => const WeatherScreen(),
           },
+          debugShowCheckedModeBanner: false,
         ),
       ),
     );

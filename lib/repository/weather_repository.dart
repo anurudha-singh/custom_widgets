@@ -12,8 +12,9 @@ class WeatherRepository {
     try {
       String cityName = 'New Delhi';
       final weatherData = await weatherDataProvider.getCurrentWeather(cityName);
-
+      print('data before :$weatherData');
       final data = jsonDecode(weatherData);
+      print('data after :$data');
 
       if (data['cod'] != '200') {
         throw 'An unexpected error occurred';

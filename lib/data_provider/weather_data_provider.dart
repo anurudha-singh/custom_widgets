@@ -9,8 +9,6 @@ class WeatherDataProvider {
           'https://api.openweathermap.org/data/2.5/forecast?q=$cityName&APPID=$openWeatherAPIKey',
         ),
       );
-      print('inside the weather data provider');
-      print(res.body);
       return res.body;
     } catch (e) {
       throw e.toString();
