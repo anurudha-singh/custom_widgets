@@ -20,10 +20,9 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (_) => MyHomePage(),
+        '/': (_) => const MyHomePage(),
         '/wallpaper_screen': (_) => const WallpaperScreen(),
       },
-      home: const MyHomePage(),
     );
   }
 }

@@ -14,7 +14,7 @@ class MyHomePage extends StatelessWidget {
       body: Center(
           child: GradientButton(
               onPressed: () {
-                print('button clicked');
+                Navigator.pushNamed(context, '/wallpaper_screen');
               },
               title: 'Click to move wallpaper screen')),
     );

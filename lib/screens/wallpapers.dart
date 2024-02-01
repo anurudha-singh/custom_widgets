@@ -1,3 +1,4 @@
+import 'package:custom_widgets/widget/gradient_button.dart';
 import 'package:flutter/material.dart';
 
 class WallpaperScreen extends StatefulWidget {
@@ -14,7 +15,14 @@ class _WallpaperScreenState extends State<WallpaperScreen> {
       appBar: AppBar(
         title: Text('wallpaper Screen'),
       ),
-      body: Container(child: Center(child: Text('At wallpaper Screen'))),
+      body: Container(
+          child: Column(
+        children: [
+          GradientButton(
+              title: 'Click to move Home Page',
+              onPressed: () => Navigator.pushNamed(context, '/'))
+        ],
+      )),
     );
   }
 }
