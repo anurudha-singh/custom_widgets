@@ -23,7 +23,12 @@ class _WallpaperScreenState extends State<WallpaperScreen> {
           children: [
             GradientButton(
                 title: 'Click to move Home Page',
-                onPressed: () => Navigator.pushNamed(context, '/'))
+                onPressed: () => Navigator.pushNamed(context, '/')),
+            SizedBox(height: 20),
+            GradientButton(
+                title: 'Click to view Weather Information',
+                onPressed: () =>
+                    Navigator.pushNamed(context, '/weather_information_screen'))
           ],
         )),
       ),
