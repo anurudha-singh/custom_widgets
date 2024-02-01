@@ -16,7 +16,7 @@ class MyHomePage extends StatelessWidget {
               onPressed: () {
                 Navigator.pushNamed(context, '/wallpaper_screen');
               },
-              title: 'Click to move wallpaper screen')),
+              title: 'Click to move Wallpaper screen')),
     );
   }
 }

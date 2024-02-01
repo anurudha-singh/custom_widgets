@@ -13,16 +13,20 @@ class _WallpaperScreenState extends State<WallpaperScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('wallpaper Screen'),
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: Text('Wallpaper Screen'),
       ),
-      body: Container(
-          child: Column(
-        children: [
-          GradientButton(
-              title: 'Click to move Home Page',
-              onPressed: () => Navigator.pushNamed(context, '/'))
-        ],
-      )),
+      body: Center(
+        child: Container(
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            GradientButton(
+                title: 'Click to move Home Page',
+                onPressed: () => Navigator.pushNamed(context, '/'))
+          ],
+        )),
+      ),
     );
   }
 }
